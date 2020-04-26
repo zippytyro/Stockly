@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockly</title>
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header and Navbar -->
+    <header id="header">
+        <img id="header-img" src="" alt="">
+        <a class="brand" id="header" href="#">
+            <p>Stockly</p>
+        </a>
+        <nav id="nav-bar">
+            <a onclick="closeNav()" id="nav-bar-close" href="javascript:void(0)">&times;</a>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+        <span onclick="openNav()" class="nav-toggle"><i class="fas fa-bars"></i></span>
+    </header>
+    <!-- Home section -->
+    <main>
+        <div id="home" class="home">
+            <div class="home-section">
+                <h1>Start Trading today.</h1>
+                <p>Start trading with our intuitive platform</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+        <!-- video section -->
+        <div class="video">
+            <h2>How stock exchange works?</h2>
+            <iframe src="https://www.youtube.com/embed/F3QpgXBtDeo" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <!-- features section -->
+        <div id="features" class="features">
+            <div class="feature-container">
+                <img src="images/file_sync_ot38.svg" alt="">
+                <h2>Synchronized</h2>
+                <p>Our platform is fully synchronized, with a mobile app for android and iOS available on playstore and
+                    Appstore</p>
+            </div>
+            <div class="feature-container">
+                <img src="images/options_2fvi.svg" alt="">
+                <h2>Intuitive Platform</h2>
+                <p>People who are newe to our trading find it easy to trade stocks on our platform. Why don't give a
+                    try? </p>
+            </div>
+            <div class="feature-container">
+                <img src="images/progressive_app_m9ms.svg" alt="">
+                <h2>Newbie Friendly</h2>
+                <p>Learning to trade takes time, so we built the most AI driven platform so that you focus on what's
+                    important.</p>
+            </div>
+        </div>
+        <div id="pricing" class="pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-container">
+                <div class="pricing-container-head">
+                    <h2>Bronze</h2>
+                </div>
+                <p>1000 points for demo</p>
+                <p>Free 'Get started" book</p>
+                <p>1 person per account</p>
+                <button>Get started [&#8377;0]</button>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-container-head">
+                    <h2>Silver</h2>
+                </div>
+                <p>All the bronze features</p>
+                <p>Access to forum</p>
+                <p>2 persons per account</p>
+                <button>Get started [&#8377;199]</button>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-container-head">
+                    <h2>Platinum</h2>
+                </div>
+                <p>All Silver features</p>
+                <p>Access to 'Stockly Learn'</p>
+                <p>10 persons per account</p>
+                <button>Get started [&#8377;499]</button>
+            </div>
+        </div>
+        <div class="sign-up">
+            <h2>Sign-up with E-mail</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="footer-menu">
+                <h4>Company</h4>
+                <a href="">Events</a>
+                <a href="">Opportunities</a>
+                <a href="">Resources</a>
+                <a href="">Jobs</a>
+            </div>
+            <div class="footer-menu">
+                <h4>Community</h4>
+                <a href="">Forum</a>
+                <a href="">Stockly Learn</a>
+                <a href="">People</a>
+                <a href="">Administrators</a>
+            </div>
+        </footer>
+        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+        <script src="index.js"></script>
+    </main>
+</body>
+
+</html>
