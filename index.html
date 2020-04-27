@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/stockly.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stockly</title>
     <!-- font awesome CDN -->
@@ -22,9 +23,14 @@
         </span>
         <nav id="nav-bar">
             <a onclick="closeNav()" id="nav-bar-close" href="javascript:void(0)">&times;</a>
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#features">Features</a>
-            <a class="nav-link" href="#pricing">Pricing</a>
+            <a onclick="closeNav()" class="nav-link" href="#home">Home</a>
+            <a onclick="closeNav()" class="nav-link" href="#features">Features</a>
+            <a onclick="closeNav()" class="nav-link" href="#pricing">Pricing</a>
+            <div class="nav-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
         </nav>
         <span onclick="openNav()" class="nav-toggle"><i class="fas fa-bars"></i></span>
     </header>
@@ -34,13 +40,13 @@
             <div class="home-section">
                 <h1>Start Trading today.</h1>
                 <p>Start trading with our intuitive platform</p>
-                <button>Get Started</button>
+                <a href="#form"><button>Get Started</button></a>
             </div>
         </div>
         <!-- video section -->
         <div class="video">
             <h2>How stock exchange works?</h2>
-            <iframe src="https://www.youtube.com/embed/F3QpgXBtDeo" frameborder="0"
+            <iframe id="video" src="https://www.youtube.com/embed/F3QpgXBtDeo" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -97,9 +103,9 @@
         </div>
         <div class="sign-up">
             <h2>Sign-up with E-mail</h2>
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <form action="#" id="form">
                 <input type="email" id="email" name="email" placeholder="Enter Email">
-                <button type="submit">Submit</button>
+                <input id="submit" type="submit"></input>
             </form>
         </div>
         <footer class="footer">
