@@ -46,7 +46,10 @@ body {
     text-decoration: none;
     font-family: 'Righteous', cursive;
 }
-
+.brand a{
+    color: var(--light-color);
+    text-decoration: none;
+}
 .nav-toggle {
     position: absolute;
     margin-left: 90%;
@@ -628,6 +631,11 @@ input[type="email"] {
 
 input, button{
     outline: none;
+}
+
+.copyright{
+    background-color: var(--light-color);
+    color: var(--text-color);
 }
 /* media queries */
 @media screen and (min-width: 700px) {
