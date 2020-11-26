@@ -9,3 +9,12 @@ function closeNav() {
     document.getElementById("nav-bar").style.backgroundColor = "transparent";
     document.body.style.backgroundColor = "transparent";
 }
+
+function getDate(){
+    var date = new Date();
+    date = date.getFullYear();
+    return date;
+}
+
+var displayDate = document.getElementById("date");
+displayDate.innerText = getDate();

@@ -70,7 +70,6 @@ body {
 
 #nav-bar>a:hover {
     color: #f1f3f480;
-    ;
 }
 
 #nav-bar-close {
@@ -348,7 +347,9 @@ input[type="email"] {
     .nav-icons {
         top: 30%;
     }
-}:root {
+}
+
+:root {
     --text-color: #512b58;
     --primary-color: #2a7886;
     --secondary-color: #79bac1;
@@ -625,6 +626,9 @@ input[type="email"] {
     color: #f1f3f480;
 }
 
+input, button{
+    outline: none;
+}
 /* media queries */
 @media screen and (min-width: 700px) {
     .home-section {
